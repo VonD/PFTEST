@@ -200,21 +200,42 @@
  *   );
  * @endcode
  */
-$databases = array (
-  'default' => 
-  array (
+ 
+if ($_SERVER["HTTP_HOST"] == "localhost:8888") {
+  $databases = array (
     'default' => 
     array (
-      'database' => 'pf_dev',
-      'username' => 'paulvonderscher',
-      'password' => '',
-      'host' => 'localhost',
-      'port' => '',
-      'driver' => 'pgsql',
-      'prefix' => '',
+      'default' => 
+      array (
+        'database' => 'pf_dev',
+        'username' => 'paulvonderscher',
+        'password' => '',
+        'host' => 'localhost',
+        'port' => '',
+        'driver' => 'pgsql',
+        'prefix' => '',
+      ),
     ),
-  ),
-);
+  );
+} else {
+  /*postgres://gfvthnvjri:k7PXIwBr6ersd1P3vLSv@ec2-107-22-223-97.compute-1.amazonaws.com/gfvthnvjri*/
+  $databases = array (
+    'default' => 
+    array (
+      'default' => 
+      array (
+        'database' => 'gfvthnvjri',
+        'username' => 'gfvthnvjri',
+        'password' => 'k7PXIwBr6ersd1P3vLSv',
+        'host' => 'ec2-107-22-223-97.compute-1.amazonaws.com',
+        'port' => '',
+        'driver' => 'pgsql',
+        'prefix' => '',
+      ),
+    ),
+  );
+}
+
 
 /**
  * Access control for update.php script.

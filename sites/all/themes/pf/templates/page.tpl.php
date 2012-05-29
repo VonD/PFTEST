@@ -33,3 +33,5 @@
     </nav>
   <?php endif; ?>
 </header>
+
+<?php print render($page['footer']); ?>
