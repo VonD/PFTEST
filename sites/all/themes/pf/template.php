@@ -14,7 +14,9 @@
   function pf_preprocess_html(&$variables, $hook) {
     
     // Add variables and paths needed for HTML5 and responsive support.
-    $variables['js_path'] = base_path() . drupal_get_path('theme', 'pf') . "/assets/javascripts/";
+    $variables['assets_path'] = base_path() . drupal_get_path('theme', 'pf') . "/assets/";
+    $variables['js_path'] = $variables['assets_path'] . "javascripts/";
+    $variables['img_path'] = $variables['assets_path'] . "images/";
     
     $variables['html_attributes_array'] = array(
       'lang' => $variables['language']->language,
@@ -31,6 +33,14 @@
   function pf_process_html(&$variables, $hook) {
     // Flatten out html_attributes
     $variables['html_attributes'] = drupal_attributes($variables['html_attributes_array']);
+  }
+  
+  function pf_preprocess_page(&$variables, $hook) {
+    $variables['pf_socialLinks'] = array(
+      'facebook' => 'http://facebook.com',
+      'you_tube' => 'http://youtube.com',
+      'twitter' => 'http://twitter.com'
+    );
   }
 
 ?>

@@ -77,10 +77,10 @@
 <!--[if (gte IE 9)|(gt IEMobile 7)]><!--><html <?php print $html_attributes . $rdf_namespaces; ?>><!--<![endif]-->
   <head profile="<?php print $grddl_profile; ?>">
     <?php print $head; ?>
-    <meta name="MobileOptimized" content="width">
+    <!--<meta name="MobileOptimized" content="width">
     <meta name="HandheldFriendly" content="true">
     <meta name="viewport" content="width=device-width">
-    <meta http-equiv="cleartype" content="on">
+    <meta http-equiv="cleartype" content="on">-->
     <title><?php print $head_title; ?></title>
     <?php print $styles; ?>
     <!--[if lt IE 9]>
@@ -89,9 +89,13 @@
     <script type="text/javascript" src="<?php print $js_path; ?>modernizr.js"></script>
   </head>
   <body class="<?php print $classes; ?>" <?php print $attributes;?>>
+    <!-- PAGE TOP -->
     <?php print $page_top; ?>
+    <!-- END PAGE TOP ** PAGE -->
     <?php print $page; ?>
+    <!-- END PAGE ** PAGE BOTTOM -->
     <?php print $page_bottom; ?>
+    <!-- END PAGE BOTTOM -->
     <?php print $scripts; ?>
   </body>
 </html>
