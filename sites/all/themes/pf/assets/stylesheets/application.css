@@ -1,0 +1,18 @@
+html { 
+  margin:0;
+  padding:0;
+	background-repeat: repeat;
+	background-position: center;
+	background-attachment:fixed;
+  -webkit-background-size: cover; /* pour Chrome et Safari */
+  -moz-background-size: cover; /* pour Firefox */
+  -o-background-size: cover; /* pour Opera */
+  background-size: cover; /* version standardisée */
+}
+
+#fullBg {
+	position:fixed;
+	top:0;
+	left:0;
+	z-index:-1;
+}

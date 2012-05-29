@@ -1,0 +1,11 @@
+name        = PlaNet Finance
+description = A custom theme for PlaNet Finance by <a href="mailto:paul.vonderscher@gmail.com">Paul Vonderscher</a>.
+screenshot  = screenshot.png
+
+version = 1.0
+core = 7.x
+engine = phptemplate
+
+stylesheets[all][] = assets/stylesheets/application.css
+
+scripts[] = assets/javascripts/application.js
