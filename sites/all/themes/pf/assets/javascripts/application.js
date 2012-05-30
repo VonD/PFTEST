@@ -1,9 +1,9 @@
 (function($, window, document){
 	$(function(){
 		if (Modernizr.backgroundsize) {
-			$("html").css("background-image", "url(/23.jpg)");
+			$("html").css("background-image", "url(/drupal/sites/all/themes/pf/assets/images/23.jpg)");
 		} else {
-			$("body").append("<img src='/23.jpg' id='fullBg' />");
+			$("body").append("<img src='/drupal/sites/all/themes/pf/assets/images/23.jpg' id='fullBg' />");
 			var img = $("#fullBg");
 			var resizeBg = function(img){
 				var imgWidth = img.width();

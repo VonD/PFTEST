@@ -224,11 +224,10 @@ if ($_SERVER["HTTP_HOST"] == "localhost:8888") {
     array (
       'default' => 
       array (
-        'database' => 'gfvthnvjri',
-        'username' => 'gfvthnvjri',
-        'password' => 'k7PXIwBr6ersd1P3vLSv',
-        'host' => 'ec2-107-22-223-97.compute-1.amazonaws.com',
-        'port' => '',
+        'database' => 'pftestdb',
+        'username' => 'paulvonderscher',
+        'password' => 'PFhexa184',
+        'host' => 'localhost',
         'driver' => 'pgsql',
         'prefix' => '',
       ),
